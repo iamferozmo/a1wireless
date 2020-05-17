@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
   <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164589330-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164589330-1');
+</script>
+
     <!-- Mobile Specific Meta -->
     <meta
       name="viewport"
@@ -72,9 +82,9 @@
           <nav id="nav-menu-container">
             <ul class="nav-menu">
               <li class="menu-active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About US</a></li>
+              <li><a href="ps.html">Product Services</a></li>
               <li><a href="Solution.html">Solution</a></li>
-              <li class="menu-has-children"><a href="/careers.html"> Careers</a>
+              <li class="menu-has-children"><a href="careers.html"> Careers</a>
                
           </li>       
               <li><a href="contact.html">Contact</a></li>
@@ -141,29 +151,26 @@
             <div class="row">
                 <div class="col-lg-8 col-md-8">
                     <h3 class="mb-30">Contact Form</h3>
-						<form action="#">
+						<form action="form.php" method="post">
 							<div class="mt-10">
-								<input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input-primary">
+								<input type="text" id="firstName" name="firstName" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input-primary">
 									</div>
 									<div class="mt-10">
-										<input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required class="single-input-primary">
+										<input type="text" id="lastName" name="lastName" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required class="single-input-primary">
 									</div>
 									<div class="mt-10">
-										<input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required class="single-input-primary">
-									</div>
-									<div class="mt-10">
-										<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required class="single-input-primary">
+										<input type="email" id="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required class="single-input-primary">
 									</div>
 									<div class="input-group-icon mt-10">
 										<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-										<input type="text" name="address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
+										<input type="text" id="address" name="address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
 									</div>
 									<div class="mt-10">
-										<textarea class="single-textarea" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required></textarea>
+										<textarea  id="message" name="message" class="single-textarea" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required></textarea>
 									</div>
                                     <div class="input-group-icon mt-10">
 										<div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
-										<input type="tel" maxlength="10" name="phone" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" required class="single-input">
+										<input type="tel" maxlength="10" id="phone" name="phone" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" required class="single-input">
                                     </div>
                                     <button class="genric-btn primary circle mt-30" style="float: right;">Submit</button>
 								</form>
